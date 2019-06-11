@@ -1,0 +1,8 @@
+version: '2.0'
+services:
+    libreoffice_service:
+        build: .
+        ports:
+            - 8101:8100
+        volumes:
+            - ~/libreoffice_docs/:/documents/
